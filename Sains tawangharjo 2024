@@ -1,0 +1,378 @@
+class Question {
+  final String questionText;
+  final List<String> options;
+  final int answerIndex;
+  final double difficulty;
+
+  Question({
+    required this.questionText,
+    required this.options,
+    required this.answerIndex,
+    required this.difficulty,
+  });
+}
+
+
+final List<Question> questions = [
+  Question(
+    questionText: 'Soal Nomor 1.\nOrganisme apa yang menggunakan fotosintesis sebagai cara untuk membuat makanan?',
+    options: ['A. Jamur', 'B. Bakteri', 'C. Alga', 'D. Virus'],
+    answerIndex: 2,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 2.\nCiri khas apa yang memungkinkan tumbuhan untuk melakukan fotosintesis?',
+    options: ['A. Memiliki akar', 'B. Memiliki klorofil', 'C. Memiliki duri', 'D. Memiliki bulu'],
+    answerIndex: 1,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 3.\nApa peran utama suaka margasatwa dalam konservasi?',
+    options: ['A. Penelitian ilmiah', 'B. Pendidikan publik', 'C. Perlindungan habitat', 'D. Pariwisata'],
+    answerIndex: 2,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 4.\nBagaimana cara laba-laba membedakan diri dari serangga?',
+    options: ['A. Mempunyai tiga pasang kaki', 'B. Mempunyai dua pasang kaki', 'C. Mempunyai satu pasang kaki', 'D. Mempunyai empat pasang kaki'],
+    answerIndex: 3,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 5.\nApa yang terjadi selama proses ekskresi pada manusia?',
+    options: ['A. Pengambilan oksigen', 'B. Pengeluaran zat sisa metabolisme', 'C. Pengambilan nutrisi', 'D. Fotosintesis'],
+    answerIndex: 1,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 6.\nGolongan organisme apa yang inti selnya tidak jelas karena tidak dibungkus oleh membran?',
+    options: ['A. Eukariota', 'B. Protista', 'C. Prokariota', 'D. Fungi'],
+    answerIndex: 2,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 7.\nManakah yang bukan merupakan ciri tumbuhan?',
+    options: ['A. Mempunyai daun', 'B. Tidak mempunyai batang sejati', 'C. Berkembang biak dengan biji', 'D. Mampu melakukan fotosintesis'],
+    answerIndex: 1,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 8.\nApa yang dimaksud dengan konservasi "in situ"?',
+    options: ['A. Konservasi dilakukan di laboratorium', 'B. Konservasi dilakukan di habitat asli', 'C. Konservasi genetik', 'D. Konservasi ex situ'],
+    answerIndex: 1,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 9.\nHewan apa yang termasuk dalam kategori omnivora?',
+    options: ['A. Singa', 'B. Kelinci', 'C. Ular', 'D. Beruang'],
+    answerIndex: 3,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 10.\n"Berkembang biak" dalam konteks ciri-ciri makhluk hidup berarti?',
+    options: ['A. Tumbuh', 'B. Bergerak', 'C. Menghasilkan keturunan', 'D. Merespon lingkungan'],
+    answerIndex: 2,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 11.\nApa yang dimiliki oleh hewan dan tumbuhan sebagai makhluk hidup?',
+    options: ['A. Memiliki dinding sel', 'B. Mampu beradaptasi', 'C. Mampu membuat makanan sendiri', 'D. Hidup secara heterotroph'],
+    answerIndex: 1,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 12.\nBagaimana cara melindungi hewan langka?',
+    options: ['A. Melakukan penelitian', 'B. Membangun kebun binatang', 'C. Pendidikan konservasi', 'D. Membuat suaka margasatwa'],
+    answerIndex: 3,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 13.\nApa yang dimaksud dengan "Teori Abiogenesis"?',
+    options: ['A. Kehidupan berasal dari non-hidup', 'B. Kehidupan berasal dari kehidupan sebelumnya', 'C. Kehidupan berasal dari benda mati', 'D. Kehidupan berasal dari evolusi kimia'],
+    answerIndex: 0,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 14.\nOrganisme yang membuat makanan sendiri melalui proses fotosintesis disebut?',
+    options: ['A. Heterotroph', 'B. Autotroph', 'C. Konsumen', 'D. Produsen'],
+    answerIndex: 1,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 15.\nApa yang dimaksud dengan "ekosistem"?',
+    options: ['A. Kumpulan organisme dari satu spesies', 'B. Interaksi antara organisme dan abiotik di suatu area', 'C. Kumpulan habitat dalam suatu area', 'D. Sistem ekonomi dalam biologi'],
+    answerIndex: 1,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 16.\nApa yang dimiliki oleh hewan?',
+    options: ['A. Klorofil', 'B. Kemampuan beradaptasi', 'C. Dinding sel', 'D. Akar'],
+    answerIndex: 1,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 17.\nApa yang dimiliki oleh tanaman hijau yang tidak dimiliki oleh hewan?',
+    options: ['A. Sel darah', 'B. Klorofil', 'C. Insang', 'D. Bulu'],
+    answerIndex: 1,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 18.\nApa yang dimaksud dengan konservasi "In situ"?',
+    options: ['A. Konservasi dalam laboratorium', 'B. Konservasi di habitat asli', 'C. Konservasi spesies dengan teknologi', 'D. Konservasi genetik'],
+    answerIndex: 1,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 19.\nProses pengeluaran zat sisa metabolisme dari tubuh makhluk hidup disebut?',
+    options: ['A. Fotosintesis', 'B. Respirasi', 'C. Ekskresi', 'D. Ingesti'],
+    answerIndex: 2,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 20.\nTanaman yang termasuk ke dalam kelompok berbiji terbuka adalah?',
+    options: ['A. Padi', 'B. Pinus', 'C. Mangga', 'D. Anggrek'],
+    answerIndex: 1,
+    difficulty: 1.0,
+  ),
+  Question(
+    questionText: 'Soal Nomor 21.\nTanaman apa yang berkembang biak dengan spora?',
+    options: ['A. Lumut', 'B. Anggrek', 'C. Padi', 'D. Mawar'],
+    answerIndex: 0,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 22.\nApa yang dimaksud dengan "Teori Biogenesis"?',
+    options: ['A. Kehidupan berasal dari benda tak hidup', 'B. Kehidupan berasal dari kehidupan', 'C. Kehidupan berasal dari keadaan abiotik', 'D. Kehidupan berasal dari proses kimia'],
+    answerIndex: 1,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 23.\nSiapakah yang berperan sebagai produsen di ekosistem sungai?',
+    options: ['A. Zooplankton', 'B. Ikan', 'C. Algae/Fitoplankton', 'D. Bakteri'],
+    answerIndex: 2,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 24.\nApa yang membedakan antara hewan dan tumbuhan?',
+    options: ['A. Tumbuhan tidak bernafas, hewan bernafas', 'B. Hewan tidak dapat fotosintesis, tumbuhan bisa', 'C. Hewan bergerak mencari makan, tumbuhan tidak', 'D. Tumbuhan memiliki dinding sel, hewan tidak'],
+    answerIndex: 2,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 25.\nApa yang dimaksud dengan "Keanekaragaman hayati"?',
+    options: ['A. Bermacam-macam jenis organisme', 'B. Variasi dalam spesies tertentu', 'C. Perbedaan habitat dalam ekosistem', 'D. Keragaman genetik dalam populasi'],
+    answerIndex: 0,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 26.\nOrganisme apa yang mempunyai hubungan predasi?',
+    options: ['A. Ular dan tikus', 'B. Kumbang dan daun', 'C. Bunga dan lebah', 'D. Sapi dan rumput'],
+    answerIndex: 0,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 27.\nKelompok makhluk hidup apa yang termasuk komponen biotik dalam ekosistem?',
+    options: ['A. Air, tanah, dan batu', 'B. Tumbuhan, hewan, dan mikroorganisme', 'C. Matahari, udara, dan cahaya', 'D. Gunung, sungai, dan danau'],
+    answerIndex: 1,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 28.\nProses berhentinya siklus menstruasi pada wanita usia lanjut disebut...',
+    options: ['A. Oogenesis', 'B. Menstruasi', 'C. Menopause', 'D. Pubertas'],
+    answerIndex: 2,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 29.\nPenulisan nama spesies tumbuhan yang benar adalah...',
+    options: ['A. Oryza sativa', 'B. oryza Sativa', 'C. Oryza Sativa', 'D. oryza sativa'],
+    answerIndex: 0,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 30.\nOrganisme apa yang membentuk simbiosis mutualisme?',
+    options: ['A. Kutu rambut dengan manusia', 'B. Semut dan pohon akasia', 'C. Lebah dan bunga', 'D. Benalu dengan pohon inang'],
+    answerIndex: 1,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 31.\nSiapa yang berperan sebagai produsen di ekosistem danau?',
+    options: ['A. Bakteri', 'B. Ikan', 'C. Algae/Fitoplankton', 'D. Zooplankton'],
+    answerIndex: 2,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 32.\nApa fungsi dari amnion?',
+    options: ['A. Memberi makan dan oksigen pada embrio', 'B. Melindungi embrio dari benturan', 'C. Memungkinkan pertukaran gas', 'D. Menghasilkan hormon'],
+    answerIndex: 1,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 33.\nKeanekaragaman apa yang bukan pengelompokan keanekaragaman makhluk hidup?',
+    options: ['A. Keanekaragaman genetik', 'B. Keanekaragaman spesies', 'C. Keanekaragaman ekosistem', 'D. Keanekaragaman makanan'],
+    answerIndex: 3,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 34.\nApa yang dimiliki oleh ayam sebagai hewan omnivora?',
+    options: ['A. Paruh untuk memecah biji', 'B. Gigi taring untuk memangsa', 'C. Lambung khusus untuk memfermentasi tumbuhan', 'D. Kemampuan untuk memakan berbagai jenis makanan'],
+    answerIndex: 3,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 35.\nPerkembangbiakan tumbuhan yang dilakukan dengan cara menimbun bagian cabang yang tumbuh memanjang dalam permukaan tanah disebut...',
+    options: ['A. Merunduk', 'B. Stek', 'C. Cangkok', 'D. Biji'],
+    answerIndex: 0,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 36.\nSiapa yang berperan sebagai produsen di ekosistem hutan?',
+    options: ['A. Rusa', 'B. Serigala', 'C. Pohon/Tumbuhan', 'D. Jamur'],
+    answerIndex: 2,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 37.\nOrgan apa yang termasuk dalam kelompok alat ekskresi atau pengeluaran sisa metabolisme pada manusia?',
+    options: ['A. Jantung', 'B. Otak', 'C. Ginjal', 'D. Hati'],
+    answerIndex: 2,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 38.\nProses apa yang menandai berhentinya siklus menstruasi pada wanita usia lanjut?',
+    options: ['A. Oogenesis', 'B. Menstruasi', 'C. Menopause', 'D. Ovulasi'],
+    answerIndex: 2,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 39.\nApa yang dimaksud dengan "Keanekaragaman hayati"?',
+    options: ['A. Keragaman bentuk dan fungsi berbagai makhluk hidup', 'B. Variasi genetik dalam satu spesies', 'C. Perbedaan ekosistem di bumi', 'D. Variasi jenis makanan dalam ekosistem'],
+    answerIndex: 0,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 40.\nApa yang dimiliki oleh organisme yang berperan sebagai produsen di ekosistem sungai?',
+    options: ['A. Kemampuan untuk bergerak secara aktif', 'B. Struktur tubuh yang kompleks', 'C. Kemampuan untuk melakukan fotosintesis', 'D. Kemampuan untuk mempredasi organisme lain'],
+    answerIndex: 2,
+    difficulty: 1.25,
+  ),
+  Question(
+    questionText: 'Soal Nomor 41.\nOrganisme yang termasuk ke dalam kelompok prokariota adalah...',
+    options: ['A. Bakteri', 'B. Jamur', 'C. Alga', 'D. Protozoa'],
+    answerIndex: 0,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 42.\nApa yang dimaksud dengan "Teori Abiogenesis"?',
+    options: ['A. Makhluk hidup berasal dari benda tak hidup', 'B. Makhluk hidup berasal dari makhluk hidup lain', 'C. Kehidupan berasal dari proses kimia', 'D. Kehidupan berasal dari evolusi biologis'],
+    answerIndex: 0,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 43.\nOrganisme yang berperan sebagai produsen di ekosistem hutan adalah...',
+    options: ['A. Rusa', 'B. Serangga', 'C. Pohon/tumbuhan', 'D. Jamur'],
+    answerIndex: 2,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 44.\nApa yang dimiliki oleh organisme yang berperan sebagai produsen di ekosistem sungai?',
+    options: ['A. Zooplankton', 'B. Ikan', 'C. Bakteri', 'D. Tanaman air/makrofit'],
+    answerIndex: 3,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 45.\nOrganisme yang termasuk dalam kelompok alat ekskresi atau pengeluaran sisa metabolisme pada manusia adalah...',
+    options: ['A. Paru-paru', 'B. Kulit', 'C. Ginjal', 'D. Usus besar'],
+    answerIndex: 2,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 46.\nApa yang dimaksud dengan "Perkembangbiakan tumbuhan yang dilakukan dengan cara menimbun bagian cabang yang tumbuh memanjang dalam permukaan tanah"?',
+    options: ['A. Merunduk', 'B. Stek', 'C. Cangkok', 'D. Biji'],
+    answerIndex: 0,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 47.\nOrganisme yang berperan sebagai produsen di ekosistem danau adalah...',
+    options: ['A. Bakteri', 'B. Rusa', 'C. Pohon', 'D. Alga/fitoplankton'],
+    answerIndex: 3,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 48.\nApa yang dimaksud dengan "Fungsi dari amnion"?',
+    options: ['A. Memberi makan dan oksigen pada embrio', 'B. Melindungi embrio dari infeksi', 'C. Memfasilitasi pertukaran gas', 'D. Menyimpan nutrisi'],
+    answerIndex: 1,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 49.\nOrganisme yang membentuk simbiosis mutualisme adalah...',
+    options: ['A. Kutu rambut dengan manusia', 'B. Semut dan pohon akasia', 'C. Lebah dan bunga', 'D. Ikan badut dan anemon laut'],
+    answerIndex: 1,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 50.\nApa yang dimaksud dengan "Penulisan nama spesies tumbuhan yang benar"?',
+    options: ['A. Oryza sativa', 'B. oryza Sativa', 'C. Oryza Sativa', 'D. oryza sativa'],
+    answerIndex: 0,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 51.\nOrganisme yang berperan sebagai produsen di ekosistem sungai adalah...',
+    options: ['A. Bakteri', 'B. Ikan', 'C. Algae/Fitoplankton', 'D. Zooplankton'],
+    answerIndex: 2,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 52.\nProses berhentinya siklus menstruasi pada wanita usia lanjut disebut...',
+    options: ['A. Oogenesis', 'B. Menstruasi', 'C. Menopause', 'D. Pubertas'],
+    answerIndex: 2,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 53.\nApa fungsi dari amnion?',
+    options: ['A. Memberi makan dan oksigen pada embrio', 'B. Melindungi embrio dari benturan', 'C. Memungkinkan pertukaran gas', 'D. Menghasilkan hormon'],
+    answerIndex: 1,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 54.\nKeanekaragaman apa yang bukan pengelompokan keanekaragaman makhluk hidup?',
+    options: ['A. Keanekaragaman genetik', 'B. Keanekaragaman spesies', 'C. Keanekaragaman ekosistem', 'D. Keanekaragaman makanan'],
+    answerIndex: 3,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 55.\nOrgan apa yang termasuk dalam kelompok alat ekskresi atau pengeluaran sisa metabolisme pada manusia?',
+    options: ['A. Jantung', 'B. Otak', 'C. Ginjal', 'D. Hati'],
+    answerIndex: 2,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 56.\nPerkembangbiakan tumbuhan yang dilakukan dengan cara menimbun bagian cabang yang tumbuh memanjang dalam permukaan tanah disebut...',
+    options: ['A. Merunduk', 'B. Stek', 'C. Cangkok', 'D. Biji'],
+    answerIndex: 0,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 57.\nSiapa yang berperan sebagai produsen di ekosistem hutan?',
+    options: ['A. Rusa', 'B. Serigala', 'C. Pohon/Tumbuhan', 'D. Jamur'],
+    answerIndex: 2,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 58.\nOrganisme yang termasuk dalam kelompok alat ekskresi atau pengeluaran sisa metabolisme pada manusia adalah...',
+    options: ['A. Paru-paru', 'B. Kulit', 'C. Ginjal', 'D. Usus besar'],
+    answerIndex: 2,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 59.\nApa yang dimaksud dengan "Perkembangbiakan tumbuhan yang dilakukan dengan cara menimbun bagian cabang yang tumbuh memanjang dalam permukaan tanah"?',
+    options: ['A. Merunduk', 'B. Stek', 'C. Cangkok', 'D. Biji'],
+    answerIndex: 0,
+    difficulty: 1.5,
+  ),
+  Question(
+    questionText: 'Soal Nomor 60.\nOrganisme yang berperan sebagai produsen di ekosistem danau adalah...',
+    options: ['A. Bakteri', 'B. Rusa', 'C. Pohon', 'D. Alga/fitoplankton'],
+    answerIndex: 3,
+    difficulty: 1.5,
+  ),
+
+];
