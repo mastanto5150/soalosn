@@ -1,24 +1,3 @@
-import 'main.dart';
-
-class Question {
-  final String questionNumber;
-  final String? questionImage; // Opsional, bisa null jika tidak ada gambar
-  final String questionText;
-  final List<String> options;
-  final int answerIndex;
-  final double difficulty;
-
-  Question({
-    required this.questionNumber,
-    this.questionImage, // Gambar soal menjadi opsional
-    required this.questionText,
-    required this.options,
-    required this.answerIndex,
-    required this.difficulty,
-  });
-}
-
-final List<Question> questions = [
   Question(
     questionNumber: 'Soal Nomor 1',
     //questionImage: 'images/soal1.png', // Contoh path ke gambar soal
@@ -499,7 +478,7 @@ final List<Question> questions = [
     answerIndex: 2,
     difficulty: 1.5,
   ),
-];
+
 
 
 
